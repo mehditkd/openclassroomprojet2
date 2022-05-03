@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0px;   
+}
+
+a {
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p, a ,button {
+    font-family: Raleway;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 5%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.logoHeader {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.logoHeaderImg {
+    width: 100px;
+}
+
+.linkHeaderList {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    list-style-type: none;
+    color: black;
+}
+
+.sectionLinkSelected:hover {
+    position: relative;
+}
+
+.sectionLinkSelected:hover > .linkHeaderLink {
+    color: #0165FC;
+}
+
+.sectionLinkSelected:hover::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #0165FC;
+}
+
+.linkHeaderLink {
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0px 20px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .logoHeaderImg {
+        margin: auto;
+        width: 250px;
+    }
+    .linkHeaderBox {
+        width: 100%;
+    }
+    .linkHeaderList {
+        width: 100%;
+        padding: 0px;
+    }
+    .sectionLink {
+        width: 50%;
+        text-align: center;
+        font-size: 40px;
+    }
+    .sectionLinkSelected::before {
+        position: absolute;
+        top: auto;
+        bottom: 0px;
+        left: 0px;
+        content: "";
+        height: 8px;
+        width: 100%;
+        background-color: #0165FC;
+    }
+    .linkHeaderLink {
+        margin-bottom: 30px;
+    }
+}
+
+/* end header */
+
+/* research */
+
+#research {
+    width: 90%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.searchBox {
+    display: inline-block;
+}
+
+.searchBoxIn {
+    display: flex;
+    width: auto;
+    height: 50px;
+}
+
+.searchIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 30px;
+    border: solid #F2F2F2 2px;
+    border-left: none;
+    border-right: none;
+    font-weight: 600;
+}
+
+.searchBtn {
+    background-color: #0B65FC;
+    color: white;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0px 14px;
+}
+
+.filterBox {
+    display: flex;
+    margin-top: 30px;
+}
+
+.filterTitle {
+    margin: auto 10px auto 0px;
+    font-weight: 600;
+}
+
+.filterList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter {
+    display: flex;
+    border: solid #D9D9D9 2px;
+    margin: 10px 20px;
+    border-radius: 100px;
+    align-items: center;
+}
+
+.filterLogo {
+    background-color: #DEEBFF;
+    border-radius: 30px;
+    width: 46px;
+    height: 46px;
+    margin: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterIcon {
+    color: #0B65FC;
+}
+
+.filterText {
+    margin: 0px 12px;
+    font-weight: 700;
+}
+
+.FilterInfo {
+    margin-top: 30px;
+}
+
+.logoFilterInfo {
+    display: inline-flex;
+    border: solid #D9D9D9 1px;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    color: #0B65FC;
+    margin-right: 10px;
+}
+
+.textFilterInfo {
+    display: inline-block;
+}
+
+.searchBoxIn > .searchBtnIcon {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #research {
+        margin-top: 350px;
+    }
+    .filterBox {
+        flex-direction: column;
+    }
+    .filterLogo {
+        border-radius: 50px;
+        width: 80px;
+        height: 80px;
+        margin: -2px;
+    }
+    .filterIcon {
+        font-size: 35px;
+    }
+    .filterText {
+        font-size: 25px;
+        margin: 10px 20px;
+    }
+    .filterTitle {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .searchBox {
+        width: 100%;
+    }
+
+    .searchBoxIn {
+        display: flex;
+        justify-content: stretch;
+        width: 100%;
+        height: auto;
+    }
+    
+    .searchIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 26px;
+        background-color: #F2F2F2;
+        border-radius: 15px 0px 0px 15px;
+    }
+    .searchIcon > i {
+        font-size: 35px;
+    }
+    
+    .searchInput {
+        border: solid #F2F2F2 2px;
+        font-weight: 600;
+        width: 1000px;
+        justify-content: flex-start;
+        font-size: 30px;
+        padding-left: 30px;
+        margin-right: -30px;
+    }
+    
+    .searchBtn {
+        display: none;
+    }
+    .searchBtnIcon {
+        background-color: #0B65FC;
+        color: white;
+        border-radius: 30px;
+        font-size: 30px;
+        padding: 34px 34px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .researchTitle {
+        font-size: 40px;
+    }
+    .researchSubtitle {
+        font-size: 30px;
+    }
+}
+
+/* end research */
+
+/* Hebergements */
+
+#Hebergements {
+    display: flex;
+    width: 90%;
+    margin: 0px 5%;
+}
+
+.resultBlock {
+    background-color: #F2F2F2;
+    width: 67%;
+    border-radius: 25px;
+    padding: 40px;
+    margin-right: 3%;
+}
+
+.titleResult {
+    margin: 0px 0px 30px 10px;
+}
+
+.resultList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 322px);
+    justify-content: center;
+    grid-gap: 35px;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+
+.oneResult {
+    width: 310px;
+    background-color: white;
+    border-radius: 30px;
+    border: solid 6px white;
+    overflow: hidden;
+    box-shadow: -5px 10px 20px rgb(202, 202, 202);
+}
+
+.oneResultImg {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+
+.oneResultTitle {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px 20px;
+    margin-bottom: 8px;
+}
+
+.oneResultPrice {
+    margin: 10px 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.oneResultPrice > strong {
+    font-weight: 600;
+}
+
+.oneResultStar {
+    margin-left: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.grayStar {
+    color: #D9D9D9;
+}
+
+.blueStar {
+    color: #0B65FC;
+}
+
+.moreResult {
+    margin: 40px 0px 40px 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.mostsPopular {
+    padding: 40px 30px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    width: 30%;
+    border-radius: 25px;
+}
+
+.mostsPopularTitleBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mostPopularTitle {
+    margin: 0px;
+}
+
+.mostPopularIncon {
+    font-size: 22px;
+}
+
+.oneMostPopular {
+    display: flex;
+    background-color: white;
+    border: solid white 6px;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 170px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.mostPupularImg {
+    width: 40%;
+    object-fit: cover;
+}
+
+.infoMorePopular {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mostPopularList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+    #Hebergements {
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+    }
+    .resultBlock {
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 25px;
+        padding: 40px;
+    }
+    .mostsPopular {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .oneMostPopular {
+        width: 600px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .oneMostPopular {
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+/* end Hebergements */
+
+#Activites {
+    margin: 0px 5%;
+    margin-top: 100px;
+    width: 90%;
+}
+
+.ActivitesBlockList {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ActivitesBlock {
+    width: 23%;
+}
+
+.multibleActivitesBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.oneActivites {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgb(234, 234, 234);
+}
+
+.oneActivitesImg {
+    width: 100%;
+    height: calc(100% - 50px);
+    object-fit: cover;
+}
+
+.infoOneActivites {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.textOneActivites {
+    margin-left: 20px;
+    font-weight: 20;
+}
+
+.ActivitesFort {
+    height: 55%;
+}
+
+.ActivitesIle {
+    height: 40%;
+}
+
+.oneActivitesAlf {
+    height: 46%;
+}
+
+@media screen and (max-width: 1000px) {
+    .oneActivites {
+        margin: 30px 0px;
+    }
+    .ActivitesBlockList {
+        flex-direction: column;
+        height: auto;
+    }
+    .ActivitesBlock {
+        width: 100%;
+    }
+    .oneActivites, .ActivitesFort, .ActivitesIle, .oneActivitesAlf {
+        height: 300px;
+        width: 100%;
+    }
+    .textOneActivites {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .infoOneActivites {
+        height: 100px;
+    }
+    .oneActivitesImg {
+        height: calc(100% - 100px);
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    overflow: hidden;
+    display: flex;
+    box-sizing: border-box;
+    padding: 40px 70px;
+    margin-top: 80px;
+}
+
+.partFooter {
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.titleFooter {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px;
+    margin-bottom: 30px;
+}
+
+.contentFooter {
+    font-weight: 300;
+    margin: 15px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        flex-direction: column;
+    }
+    .partFooter {
+        width: 100%;
+    }
+    .titleFooter {
+        font-size: 35px;
+    }
+    .contentFooter {
+        font-size: 20px;
+    }
+}
