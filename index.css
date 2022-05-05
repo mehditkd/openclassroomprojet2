@@ -44,15 +44,15 @@ header {
     color: black;
 }
 
-.sectionLinkSelected:hover {
+.sectionLinkUnSelected:hover {
     position: relative;
 }
 
-.sectionLinkSelected:hover > .linkHeaderLink {
+.sectionLinkUnSelected:hover > .linkHeaderLink {
     color: #0165FC;
 }
 
-.sectionLinkSelected:hover::before {
+.sectionLinkUnSelected:hover::before {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -60,6 +60,10 @@ header {
     height: 2px;
     width: 100%;
     background-color: #0165FC;
+}
+
+.resultList a {
+    text-decoration: none
 }
 
 .linkHeaderLink {
@@ -70,7 +74,7 @@ header {
     display: inline-block;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -104,6 +108,19 @@ header {
     }
     .linkHeaderLink {
         margin-bottom: 30px;
+    }
+    .sectionLinkUnselected {
+        position: relative;
+    }
+    .sectionLinkUnselected::before {
+        position: absolute;
+        top: auto;
+        bottom: 0px;
+        left: 0px;
+        content: "";
+        height: 8px;
+        width: 100%;
+        background-color: #D9D9D9;
     }
 }
 
@@ -225,7 +242,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     #research {
         margin-top: 350px;
     }
@@ -275,7 +292,7 @@ header {
     .searchInput {
         border: solid #F2F2F2 2px;
         font-weight: 600;
-        width: 1000px;
+        width: 768px;
         justify-content: flex-start;
         font-size: 30px;
         padding-left: 30px;
@@ -341,6 +358,11 @@ header {
     border: solid 6px white;
     overflow: hidden;
     box-shadow: -5px 10px 20px rgb(202, 202, 202);
+}
+
+.oneResult:hover {
+    width: 101%;
+    height: 101%
 }
 
 .oneResultImg {
@@ -420,6 +442,10 @@ header {
     margin: auto;
 }
 
+.oneMostPopular:hover {
+    width: 101%;
+}
+
 .mostPupularImg {
     width: 40%;
     object-fit: cover;
@@ -439,7 +465,11 @@ header {
     height: 100%;
 }
 
-@media screen and (max-width: 1500px) {
+.mostPopularList a {
+    text-decoration: none
+}
+
+@media screen and (max-width: 992px) {
     #Hebergements {
         flex-direction: column-reverse;
         box-sizing: border-box;
@@ -461,10 +491,10 @@ header {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     .oneMostPopular {
         width: 100%;
-        max-width: 1000px;
+        max-width: 768px;
     }
 }
 
@@ -486,6 +516,10 @@ header {
     width: 23%;
 }
 
+.ActivitesBlock a {
+    text-decoration: none
+}
+
 .multibleActivitesBlock {
     display: flex;
     flex-direction: column;
@@ -496,6 +530,10 @@ header {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 10px 20px rgb(234, 234, 234);
+}
+
+.oneActivites:hover {
+    color: blue;
 }
 
 .oneActivitesImg {
@@ -527,7 +565,7 @@ header {
     height: 46%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     .oneActivites {
         margin: 30px 0px;
     }
@@ -583,7 +621,7 @@ footer {
     margin: 15px 0px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
     }
