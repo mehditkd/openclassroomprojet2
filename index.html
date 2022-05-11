@@ -14,8 +14,8 @@
             </div>
             <div class="linkHeaderBox">
                 <ul class="linkHeaderList">
-                    <li class="sectionLinkUnselected sectionLink"><a class="linkHeaderLink" href="#Hebergements">Hébergements</a></li>
-                    <li class="sectionLinkUnselected sectionLink"><a class="linkHeaderLink" href="#Activites">Activités</a></li>
+                    <li class="sectionLinkUnSelected sectionLink"><a class="linkHeaderLink" href="#Hebergements">Hébergements</a></li>
+                    <li class="sectionLinkUnSelected sectionLink"><a class="linkHeaderLink" href="#Activites">Activités</a></li>
                 </ul>
             </div>
         </header>
@@ -39,22 +39,30 @@
             <div class="filterBox">
                 <p class="filterTitle">Filtres</p>
                 <div class="filterList">
-                    <div class="filter">
-                        <div class="filterLogo"><i class="fa-solid fa-money-bill-wave filterIcon"></i></div>
-                        <p class="filterText">Économique</p>
-                    </div>
-                    <div class="filter">
-                        <div class="filterLogo"><i class="fa-solid fa-child-reaching filterIcon"></i></div>
-                        <p class="filterText">Familial</p>
-                    </div>
-                    <div class="filter">
-                        <div class="filterLogo"><i class="fa-solid fa-heart filterIcon"></i></div>
-                        <p class="filterText">Romantique</p>
-                    </div>
-                    <div class="filter">
-                        <div class="filterLogo"><i class="fa-solid fa-dog filterIcon"></i></div>
-                        <p class="filterText">Animaux autorisés</p>
-                    </div>
+                    <a href="#">
+                        <div class="filter">
+                            <div class="filterLogo"><i class="fa-solid fa-money-bill-wave filterIcon"></i></div>
+                            <p class="filterText">Économique</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="filter">
+                            <div class="filterLogo"><i class="fa-solid fa-child-reaching filterIcon"></i></div>
+                            <p class="filterText">Familial</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="filter">
+                            <div class="filterLogo"><i class="fa-solid fa-heart filterIcon"></i></div>
+                            <p class="filterText">Romantique</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="filter">
+                            <div class="filterLogo"><i class="fa-solid fa-dog filterIcon"></i></div>
+                            <p class="filterText">Animaux autorisés</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="FilterInfo">
@@ -225,7 +233,7 @@
         <section id="Activites">
             <h2>Activités à Marseille</h2>
             <div class="ActivitesBlockList">
-                <div class="ActivitesBlock">
+                <div class="ActivitesBlock soloActivites">
                     <div class="oneActivites" onclick="location.href='#';">
                         <img src="asset/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="oneActivitesImg">
                         <div class="infoOneActivites">
@@ -247,7 +255,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ActivitesBlock">
+                <div class="ActivitesBlock soloActivites">
                     <div class="oneActivites" onclick="location.href='#';">
                         <img src="asset/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="oneActivitesImg">
                         <div class="infoOneActivites">
@@ -271,9 +279,6 @@
                 </div>
             </div>
         </section>
-
-
-        <!-- End of the page -->
         <footer>
             <div class="partFooter">
                 <p class="titleFooter">A propos</p>
