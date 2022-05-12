@@ -82,7 +82,8 @@ header {
     }
     .logoHeaderImg {
         margin: auto;
-        width: 250px;
+        width: 150px;
+        height: 50px;
     }
     .linkHeaderBox {
         width: 100%;
@@ -107,7 +108,8 @@ header {
         background-color: #0165FC;
     }
     .linkHeaderLink {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        font-size: 20px;
     }
     .sectionLinkUnselected {
         position: relative;
@@ -200,6 +202,10 @@ header {
     margin: 10px 20px;
     border-radius: 100px;
     align-items: center;
+}
+
+.filter:hover {
+    color: blue;
 }
 
 .filterLogo {
