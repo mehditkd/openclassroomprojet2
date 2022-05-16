@@ -276,52 +276,6 @@ header {
         font-size: 30px;
         margin-bottom: 20px;
     }
-    .searchBox {
-        width: 100%;
-    }
-
-    .searchBoxIn {
-        display: flex;
-        justify-content: stretch;
-        width: 100%;
-        height: auto;
-    }
-    
-    .searchIcon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 30px 26px;
-        background-color: #F2F2F2;
-        border-radius: 15px 0px 0px 15px;
-    }
-    .searchIcon > i {
-        font-size: 35px;
-    }
-    
-    .searchInput {
-        border: solid #F2F2F2 2px;
-        font-weight: 600;
-        width: 768px;
-        justify-content: flex-start;
-        font-size: 30px;
-        padding-left: 30px;
-        margin-right: -30px;
-    }
-    
-    .searchBtn {
-        display: none;
-    }
-    .searchBtnIcon {
-        background-color: #0B65FC;
-        color: white;
-        border-radius: 30px;
-        font-size: 30px;
-        padding: 34px 34px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-    }
     .researchTitle {
         font-size: 40px;
     }
@@ -349,7 +303,12 @@ header {
 }
 
 .titleResult {
-    margin: 0px 0px 30px 10px;
+    margin: 0px 0px 30px 0px;
+}
+
+.hebergementTitleBox {
+    display: flex;
+    justify-content: space-between;
 }
 
 .resultList {
