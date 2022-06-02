@@ -124,6 +124,9 @@ header {
         width: 100%;
         background-color: #D9D9D9;
     }
+    .sectionLinkUnSelected:hover::before {
+        top: 100%;
+    }
 }
 
 /* end header */
@@ -165,6 +168,7 @@ header {
     border-left: none;
     border-right: none;
     font-weight: 600;
+    width: 100%;
 }
 
 .searchBtn {
@@ -252,9 +256,32 @@ header {
     display: none;
 }
 
+.search_logo {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     #research {
         margin-top: 350px;
+    }
+    
+    .searchBox {
+        width: 100%;
+    }
+    .search_logo {
+        display:block;
+        border-radius: 13px;
+        background:#0065fc;
+        color: #ffffff;
+        border-style: none;
+        font-weight: bold;
+        min-width: 50px;
+        font-size: 18px;
+        margin-left: -20px;
+        right: 0px;
+    }
+    .searchBtn {
+        display: none;
     }
     .filterBox {
         flex-direction: column;
@@ -470,7 +497,19 @@ header {
         border-radius: 30px;
         height: 170px;
         width: 101%;
-        max-width: 768px;
+        max-width: 992px;
+    }
+
+    .resultBlock {
+        background-color: #ffffff;
+    }
+
+    .clickable_more {
+        text-decoration: none;
+    }
+
+    .moreResult {
+        font-size: 25px;
     }
 
     .resultList {
@@ -481,7 +520,7 @@ header {
     }
     
     .infoOneResultText {
-        margin: 0px 0px 0px 20px;
+        margin: 0px;
     }
 
     .oneResultImg {
@@ -510,7 +549,7 @@ header {
 
     .oneMostPopular {
         width: 100%;
-        max-width: 768px;
+        max-width: 992px;
     }
 
     .resultBlock {
@@ -522,7 +561,7 @@ header {
         border-radius: 30px;
         height: 170px;
         width: 100%;
-        max-width: 768px;
+        max-width: 992px;
     }
 }
 
